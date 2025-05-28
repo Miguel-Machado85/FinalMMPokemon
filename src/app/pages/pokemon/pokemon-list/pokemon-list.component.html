@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <tr>
+            <th>nombre</th>
+            <th>url</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pokemon of listaPokemon">
+            <td>{{pokemon.name}}</td>
+            <td>{{pokemon.url}}</td>
+            <td>
+                <button (click)="verPokemon(pokemon.url)">Ver info del Pokemon</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
